@@ -1,0 +1,38 @@
+function escreveNome(nome) {
+    return `meu nome é ${nome}`
+}
+
+console.log(escreveNome("Richard"))
+
+function facaSoma(a, b) {
+    return `A soma é: ${a+b}`;
+}
+
+function facaSubtracao(a, b) {
+    return `A Subtração é: ${a-b}`;
+}
+
+function facaMulti(a, b) {
+    return `A Multiplicação é: ${a*b}`;
+}
+
+function facaDivi(a,b) {
+    return `A Divisão é: ${a/b}`;
+}
+
+
+console.log(facaDivi (7, 8), facaMulti(7, 8), facaSoma(7, 8), facaSubtracao(7, 8));
+
+function calcularIdade(nome, dataNascimento) {
+    
+    let idade = new Date().getFullYear() - new Date(dataNascimento).getFullYear();
+    
+    
+    let mensagem = idade >= 18 ? "é maior de idade" : "é menor de idade";
+    
+ 
+    return `${nome} tem ${idade} anos e ${mensagem}.`;
+}
+
+
+console.log(calcularIdade("Richard", "04-05-2007"));
